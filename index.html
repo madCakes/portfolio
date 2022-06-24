@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth hover:scroll-auto" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@
           <div class="pt-2 text-3xl font-bold pb-1">JASONBROOKS.IO</div>
           <!-- Menu Items -->
           <div class="hidden space-x-6 md:flex">
-            <a href="#" class="hover:text-darkGrayishBlue">About Me</a>
+            <a href="#about" class="hover:text-darkGrayishBlue">About Me</a>
             <a href="#" class="hover:text-darkGrayishBlue">Projects</a>
             <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
           </div>
@@ -39,7 +39,7 @@
             id="menu"
             class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
           >
-            <a href="#">About Me</a>
+            <a href="#about">About Me</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
           </div>
@@ -50,15 +50,48 @@
         <p class="py-2 text-xl">Self-taught Developer</p>
         <div class="flex justify-center md:justify-start">
           <a
-            href="#"
+            href="#about"
             class="p-3 px-6 pt-2 text-white bg-veryDarkBlue rounded-full baseline hover:bg-darkGrayishBlue"
             >About Me</a
           >
         </div>
       </div>
     </section>
-    <section></section>
-    <section></section>
+    <section id="about">
+      <div class="container mx-auto">
+        <h2 class="text-lg font-bold">About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+          eligendi. Iure molestiae culpa maxime repellat a sit veniam ratione,
+          consectetur quam facilis. Nesciunt eius sunt et, voluptate maxime eum
+          eos, repudiandae eligendi veritatis numquam porro, ducimus quasi
+          officia nulla! Magnam exercitationem quidem quod. Laborum id adipisci
+          possimus, consequuntur ut esse rem temporibus cum ab doloribus enim,
+          aspernatur, quam velit in. Accusamus ea omnis non sint vitae saepe
+          libero minima recusandae earum soluta praesentium quis qui
+          reprehenderit amet, nulla maxime voluptatum obcaecati distinctio magni
+          eaque natus vero tempora quasi. Sint, laborum. Aut nihil eum
+          voluptatum voluptatem ea veritatis! Voluptate, rerum illum.
+        </p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container mx-auto">
+        <!--src="https://user-images.githubusercontent.com/85590441/163819796-47b391fa-f1fb-4c89-890c-cc69ed94d490.png"-->
+        <div id="project-grid" class="grid grid-cols-3 py-4">
+          <!-- BUG rounded and overflow-hidden not working on project cards -->
+          <div class="bg-white rounded overflow-hidden shadow-md p-2">
+            <img class="object-cover" src="src/img/forkify.png" alt="" />
+          </div>
+          <div class="bg-white rounded overflow-hidden shadow-md p-2">
+            <img src="src/img/forkify.png" alt="" />
+          </div>
+          <div class="bg-white rounded overflow-hidden shadow-md p-2">
+            <img src="src/img/forkify.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
     <footer></footer>
   </body>
 </html>
