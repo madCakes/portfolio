@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["./*.html"],
+  content: [
+    "./components/**/*.{html,js}",
+    "./pages/**/*.{html,js}",
+    "./index.html",
+  ],
   theme: {
     screens: {
       sm: "480px",
